@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Button from './Button';
+import ProductListItem from './ProductListItem';
 
 const ProductList = ({ products }) => {
   const [productsToShow, setProductsToShow] = useState(4);
@@ -16,11 +17,7 @@ const ProductList = ({ products }) => {
   return (
     <div className="flex flex-col items-start space-y-2 py-12 ">
       {products.slice(0, productsToShow).map((product) => {
-        return (
-          <div className="rounded-md bg-blue-light" key={product.id}>
-            {product.title}
-          </div>
-        );
+        return <ProductListItem product={product} key={product.id} />;
       })}
       <div className="flex space-x-2 py-12">
         <Button
