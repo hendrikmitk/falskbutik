@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import api from './api/axios';
+import Button from './components/Button';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,40 +26,35 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {isLoading ? (
-        <div>Loading ...</div>
-      ) : (
-        <div>
-          <ul>
+    <div className="App text-white">
+      <div className="min-h-screen bg-blue-dark px-32 py-20">
+        <h2 className="text-4xl font-medium uppercase">Our products</h2>
+        {isLoading ? (
+          <div className="">Loading ...</div>
+        ) : (
+          <div className="flex flex-col items-start space-y-2 py-12 ">
             {products.slice(0, productsToShow).map((product) => {
-              return <li key={product.id}>{product.title}</li>;
+              return (
+                <div className="rounded-md bg-blue-light" key={product.id}>
+                  {product.title}
+                </div>
+              );
             })}
-          </ul>
-          <div className="flex space-x-2">
-            <button
-              className={`px-4 py-2 rounded-full ${
-                productsToShow >= products.length
-                  ? 'bg-sky-300 opacity-50'
-                  : 'bg-sky-500'
-              }`}
-              onClick={showMoreProducts}
-              disabled={productsToShow >= products.length}
-            >
-              Show more products
-            </button>
-            <button
-              className={`px-4 py-2 rounded-full ${
-                productsToShow <= 4 ? 'bg-sky-300 opacity-50' : 'bg-sky-500'
-              }`}
-              onClick={showLessProducts}
-              disabled={productsToShow <= 4}
-            >
-              Show less products
-            </button>
+            <div className="flex space-x-2 py-12">
+              <Button
+                isActive={productsToShow < products.length}
+                onClick={showMoreProducts}
+                text="Show more products"
+              />
+              <Button
+                isActive={productsToShow > 4}
+                onClick={showLessProducts}
+                text="Show less products"
+              />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
