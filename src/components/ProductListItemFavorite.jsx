@@ -5,7 +5,7 @@ const ProductListItemFavorite = ({ onClick, isFavorite }) => {
   return (
     <button
       onClick={onClick}
-      className={`transition duration-200 ease-in-out	${
+      className={`transition duration-500 ease-in-out	${
         isFavorite ? 'text-red' : 'text-grey-dark'
       }`}
     >
