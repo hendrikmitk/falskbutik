@@ -9,9 +9,9 @@ import Products from './pages/Products';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App font-spartan text-white">
+      <div className="App font-spartan bg-blue-dark flex h-screen flex-col text-white">
         <Header />
-        <div className="min-h-screen bg-blue-dark px-32 pt-28">
+        <div className="grow px-32 pt-28">
           <Routes>
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />

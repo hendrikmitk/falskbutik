@@ -18,7 +18,7 @@ const ProductList = ({ products }) => {
       {products.slice(0, productsToShow).map((product) => {
         return <ProductListItem product={product} key={product.id} />;
       })}
-      <div className="mx-auto flex space-x-4 py-12">
+      <div className="mx-auto flex space-x-4 pt-10">
         <Button
           isActive={productsToShow < products.length}
           onClick={showMoreProducts}

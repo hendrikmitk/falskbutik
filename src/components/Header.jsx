@@ -4,7 +4,7 @@ import ShoppingCartIcon from './ShoppingCartIcon';
 
 const Header = () => {
   return (
-    <header className="fixed flex h-20 w-full items-center justify-between bg-blue-light px-32 text-orange">
+    <header className="bg-blue-light text-orange fixed flex h-20 w-full items-center justify-between px-32">
       <NavLink to="/" className="flex items-center space-x-2">
         <ShoppingCartIcon />
         <div className="translate-y-1 text-2xl font-bold uppercase italic">

@@ -9,7 +9,7 @@ const ProductListItemRating = ({ rating }) => {
   }
 
   return (
-    <div className="flex text-grey-dark">
+    <div className="text-grey-dark flex">
       {stars.map((star, index) => (
         <StarIcon half={star} key={index} />
       ))}

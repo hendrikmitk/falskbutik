@@ -10,7 +10,7 @@ const ProductListItem = ({ product }) => {
     setIsFavorite((isFavorite) => !isFavorite);
 
   return (
-    <div className="flex w-full flex-col space-y-2 rounded-lg bg-blue-light px-4 py-6">
+    <div className="bg-blue-light flex w-full flex-col space-y-2 rounded-lg px-4 py-6">
       <div className="flex justify-between">
         <ProductListItemRating rating={product.rating.rate} />
         <ProductListItemFavorite

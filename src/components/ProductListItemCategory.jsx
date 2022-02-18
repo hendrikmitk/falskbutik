@@ -6,7 +6,7 @@ import WomensIcon from './WomensIcon';
 
 const ProductListItemCategory = ({ category }) => {
   return (
-    <div className="flex items-center space-x-6 text-grey-dark">
+    <div className="text-grey-dark flex items-center space-x-6">
       <div className={`${category === "men's clothing" && 'text-green-dark'}`}>
         <MensIcon />
       </div>
