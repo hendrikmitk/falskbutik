@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import api from './api/axios';
 import shuffle from './functions/shuffle';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
 
   return (
     <div className="App font-spartan text-white">
-      <div className="min-h-screen bg-blue-dark px-32 py-20">
+      <Header />
+      <div className="min-h-screen bg-blue-dark px-32 pt-28">
         <h2 className="text-4xl font-medium uppercase">Our products</h2>
         {isLoading ? (
           <div className="flex items-center justify-center pt-32 text-2xl">
@@ -29,6 +32,7 @@ function App() {
           <ProductList products={products} />
         )}
       </div>
+      <Footer />
     </div>
   );
 }

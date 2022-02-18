@@ -16,6 +16,7 @@ module.exports = {
           light: '#7b7b7b',
         },
         red: '#fe424c',
+        orange: '#ff9700',
       },
       fontFamily: {
         spartan: ['Spartan', 'sans-serif'],
