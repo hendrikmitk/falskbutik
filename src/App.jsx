@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import api from './api/axios';
+import shuffle from './functions/shuffle';
 import ProductList from './components/ProductList';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
   const getProducts = async () => {
     let data = await api.get('/products').then(({ data }) => data);
-    setProducts(data);
+    setProducts(shuffle(data));
     setIsLoading(false);
   };
 
