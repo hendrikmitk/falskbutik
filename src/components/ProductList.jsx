@@ -14,11 +14,11 @@ const ProductList = ({ products }) => {
   };
 
   return (
-    <div className="flex flex-col items-start space-y-2 py-12 ">
+    <div className="mx-auto flex w-2/3 flex-col items-start space-y-2 py-12">
       {products.slice(0, productsToShow).map((product) => {
         return <ProductListItem product={product} key={product.id} />;
       })}
-      <div className="flex space-x-2 py-12">
+      <div className="mx-auto flex space-x-4 py-12">
         <Button
           isActive={productsToShow < products.length}
           onClick={showMoreProducts}

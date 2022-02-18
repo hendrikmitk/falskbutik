@@ -22,7 +22,9 @@ function App() {
       <div className="min-h-screen bg-blue-dark px-32 py-20">
         <h2 className="text-4xl font-medium uppercase">Our products</h2>
         {isLoading ? (
-          <div className="">Loading ...</div>
+          <div className="flex items-center justify-center pt-32 text-2xl">
+            Loading ...
+          </div>
         ) : (
           <ProductList products={products} />
         )}
