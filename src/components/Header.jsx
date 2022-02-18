@@ -1,25 +1,29 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import ShoppingCartIcon from './ShoppingCartIcon';
 
 const Header = () => {
   return (
     <header className="fixed flex h-20 w-full items-center justify-between bg-blue-light px-32 text-orange">
-      <div className="flex items-center space-x-2">
+      <NavLink to="/" className="flex items-center space-x-2">
         <ShoppingCartIcon />
-        <a
-          className="translate-y-1 text-2xl font-bold uppercase italic"
-          href="/"
-        >
+        <div className="translate-y-1 text-2xl font-bold uppercase italic">
           Falskbutik
-        </a>
-      </div>
+        </div>
+      </NavLink>
       <div className="flex space-x-16">
-        <span className="text-lg font-medium uppercase tracking-wider">
+        <NavLink
+          to="/products"
+          className="text-lg font-medium uppercase tracking-wider"
+        >
           Products
-        </span>
-        <span className="text-lg font-medium uppercase tracking-wider">
+        </NavLink>
+        <NavLink
+          to="/about"
+          className="text-lg font-medium uppercase tracking-wider"
+        >
           About
-        </span>
+        </NavLink>
       </div>
     </header>
   );
