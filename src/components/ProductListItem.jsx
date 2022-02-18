@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProductListItemRating from './ProductListItemRating';
 import ProductListItemFavorite from './ProductListItemFavorite';
+import ProductListItemCategory from './ProductListItemCategory';
 
 const ProductListItem = ({ product }) => {
   const [isFavorite, setIsFavorite] = useState(false);
@@ -18,7 +19,10 @@ const ProductListItem = ({ product }) => {
         />
       </div>
       <p className="text-lg font-medium">{product.title}</p>
-      <p className="font-mono text-sm">{product.price} USD</p>
+      <div className="flex justify-between">
+        <p className="font-mono text-sm">{product.price} USD</p>
+        <ProductListItemCategory category={product.category} />
+      </div>
     </div>
   );
 };
