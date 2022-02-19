@@ -8,8 +8,7 @@ const ProductListItem = ({ product }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleFavoriteButtonHandler = () =>
-    setIsFavorite((isFavorite) => !isFavorite);
+  const toggleFavorite = () => setIsFavorite((isFavorite) => !isFavorite);
 
   const toggleModal = () => setIsModalOpen((isModalOpen) => !isModalOpen);
 
@@ -18,7 +17,7 @@ const ProductListItem = ({ product }) => {
       <div className="flex justify-between">
         <ProductListItemRating rating={product.rating.rate} />
         <ProductListItemFavorite
-          onClick={toggleFavoriteButtonHandler}
+          onClick={toggleFavorite}
           isFavorite={isFavorite}
         />
       </div>
@@ -33,7 +32,7 @@ const ProductListItem = ({ product }) => {
         <ProductListItemDetail
           isFavorite={isFavorite}
           product={product}
-          toggleFavoriteButtonHandler={toggleFavoriteButtonHandler}
+          toggleFavorite={toggleFavorite}
           toggleModal={toggleModal}
         />
       )}

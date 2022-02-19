@@ -7,7 +7,7 @@ import ProductListItemRating from './ProductListItemRating';
 const ProductListItemDetail = ({
   isFavorite,
   product,
-  toggleFavoriteButtonHandler,
+  toggleFavorite,
   toggleModal,
 }) => {
   return (
@@ -29,7 +29,7 @@ const ProductListItemDetail = ({
             <p className="font-mono text-sm">{product.price} USD</p>
             <ProductListItemCategory category={product.category} />
             <ProductListItemFavorite
-              onClick={toggleFavoriteButtonHandler}
+              onClick={toggleFavorite}
               isFavorite={isFavorite}
             />
           </div>
