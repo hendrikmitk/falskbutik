@@ -2,9 +2,9 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div>
+    <main>
       <h2 className="text-4xl font-medium uppercase">About</h2>
-    </div>
+    </main>
   );
 };
 

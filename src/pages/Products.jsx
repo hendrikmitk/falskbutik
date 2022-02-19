@@ -18,7 +18,7 @@ const Products = () => {
   };
 
   return (
-    <div>
+    <main>
       <h2 className="text-4xl font-medium uppercase">Our products</h2>
       {isLoading ? (
         <div className="flex items-center justify-center pt-32 text-2xl">
@@ -27,7 +27,7 @@ const Products = () => {
       ) : (
         <ProductList products={products} />
       )}
-    </div>
+    </main>
   );
 };
 
