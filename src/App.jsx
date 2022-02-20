@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './pages/About';
-import Home from './pages/Home';
+import FAQ from './pages/FAQ';
 import Products from './pages/Products';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
           <Routes>
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
-            <Route path="/" exact element={<Home />} />
+            <Route path="/" exact element={<FAQ />} />
           </Routes>
         </div>
         <Footer />
