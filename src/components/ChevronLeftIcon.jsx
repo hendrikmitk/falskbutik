@@ -10,9 +10,9 @@ const ChevronLeftIcon = () => {
       stroke="currentColor"
     >
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         d="M15 19l-7-7 7-7"
       />
     </svg>
