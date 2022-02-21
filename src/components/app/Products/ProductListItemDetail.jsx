@@ -1,5 +1,5 @@
 import React from 'react';
-import CloseIcon from './CloseIcon';
+import CloseIcon from '../../common/icons/CloseIcon';
 import ProductListItemCategory from './ProductListItemCategory';
 import ProductListItemFavorite from './ProductListItemFavorite';
 import ProductListItemRating from './ProductListItemRating';

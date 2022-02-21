@@ -1,5 +1,5 @@
 import React from 'react';
-import HeartIcon from './HeartIcon';
+import HeartIcon from '../../common/icons/HeartIcon';
 
 const ProductListItemFavorite = ({ onClick, isFavorite }) => {
   return (

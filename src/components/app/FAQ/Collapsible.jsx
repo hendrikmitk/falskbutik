@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ChevronDownIcon from './ChevronDownIcon';
-import ChevronUpIcon from './ChevronUpIcon';
+import ChevronDownIcon from '../../common/icons/ChevronDownIcon';
+import ChevronUpIcon from '../../common/icons/ChevronUpIcon';
 
 const Collapsible = ({ children, title }) => {
   const [isOpen, setIsOpen] = useState(false);

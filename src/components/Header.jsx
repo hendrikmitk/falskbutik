@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import ShoppingCartIcon from './ShoppingCartIcon';
+import ShoppingCartIcon from './common/icons/ShoppingCartIcon';
 
 const Header = () => {
   return (

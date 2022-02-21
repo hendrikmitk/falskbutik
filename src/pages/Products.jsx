@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductList from '../components/ProductList';
+import ProductList from '../components/app/Products/ProductList';
 import api from '../api/axios';
 import shuffle from '../functions/shuffle';
 
