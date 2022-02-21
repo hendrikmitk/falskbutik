@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageSlider from '../components/app/About/ImageSlider';
+import ImageSlider from '@components/app/About/ImageSlider';
 
 const About = () => {
   return (

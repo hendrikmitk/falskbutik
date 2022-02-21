@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ProductListItemRating from './ProductListItemRating';
-import ProductListItemFavorite from './ProductListItemFavorite';
-import ProductListItemCategory from './ProductListItemCategory';
-import ProductListItemDetail from './ProductListItemDetail';
+import ProductListItemRating from '@components/app/Products/ProductListItemRating';
+import ProductListItemFavorite from '@components/app/Products/ProductListItemFavorite';
+import ProductListItemCategory from '@components/app/Products/ProductListItemCategory';
+import ProductListItemDetail from '@components/app/Products/ProductListItemDetail';
 
 const ProductListItem = ({ product }) => {
   const [isFavorite, setIsFavorite] = useState(false);

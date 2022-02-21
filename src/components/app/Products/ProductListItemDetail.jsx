@@ -1,8 +1,8 @@
 import React from 'react';
-import CloseIcon from '../../common/icons/CloseIcon';
-import ProductListItemCategory from './ProductListItemCategory';
-import ProductListItemFavorite from './ProductListItemFavorite';
-import ProductListItemRating from './ProductListItemRating';
+import CloseIcon from '@components/common/icons/CloseIcon';
+import ProductListItemCategory from '@components/app/Products/ProductListItemCategory';
+import ProductListItemFavorite from '@components/app/Products/ProductListItemFavorite';
+import ProductListItemRating from '@components/app/Products/ProductListItemRating';
 
 const ProductListItemDetail = ({
   isFavorite,

@@ -1,5 +1,5 @@
 import React from 'react';
-import StarIcon from '../../common/icons/StarIcon';
+import StarIcon from '@components/common/icons/StarIcon';
 
 const ProductListItemRating = ({ rating }) => {
   let stars = [];

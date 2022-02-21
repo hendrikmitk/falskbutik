@@ -1,8 +1,8 @@
 import React from 'react';
-import ElectronicsIcon from '../../common/icons/ElectronicsIcon';
-import JeweleryIcon from '../../common/icons/JeweleryIcon';
-import MensIcon from '../../common/icons/MensIcon';
-import WomensIcon from '../../common/icons/WomensIcon';
+import ElectronicsIcon from '@components/common/icons/ElectronicsIcon';
+import JeweleryIcon from '@components/common/icons/JeweleryIcon';
+import MensIcon from '@components/common/icons/MensIcon';
+import WomensIcon from '@components/common/icons/WomensIcon';
 
 const ProductListItemCategory = ({ category }) => {
   return (

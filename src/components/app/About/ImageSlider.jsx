@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { arr } from '../../../data/team';
-import ImageSliderButton from './ImageSliderButton';
-import ChevronLeftIcon from '../../common/icons/ChevronLeftIcon';
-import ChevronRightIcon from '../../common/icons/ChevronRightIcon';
+import { arr } from '@data/team';
+import ImageSliderButton from '@components/app/About/ImageSliderButton';
+import ChevronLeftIcon from '@components/common/icons/ChevronLeftIcon';
+import ChevronRightIcon from '@components/common/icons/ChevronRightIcon';
 
 const ImageSlider = () => {
   const [slideIndex, setSlideIndex] = useState(0);

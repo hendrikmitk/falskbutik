@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Button from '../../common/Button';
-import ProductListItem from './ProductListItem';
+import Button from '@components/common/Button';
+import ProductListItem from '@components/app/Products/ProductListItem';
 
 const ProductList = ({ products }) => {
   const [productsToShow, setProductsToShow] = useState(4);
