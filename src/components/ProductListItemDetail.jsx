@@ -18,7 +18,7 @@ const ProductListItemDetail = ({
           className="text-orange flex cursor-pointer justify-end"
         >
           <div className="transition-all duration-200 hover:rotate-90">
-            <CloseIcon />
+            <CloseIcon size={8} />
           </div>
         </div>
         <div className="flex flex-col space-y-6 px-1 pb-6">
